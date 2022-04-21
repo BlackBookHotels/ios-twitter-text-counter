@@ -24,7 +24,7 @@ public enum VSTwitterTextCounterState: Int
  VSTwitterTextCounter is a custom UIControl that tries to imitate the new Twitter's tweet text counter progress-based UI.
  It follows the standard that is defined in: https://developer.twitter.com/en/docs/developer-utilities/twitter-text
  */
-public class VSTwitterTextCounter: UIControl
+open class VSTwitterTextCounter: UIControl
 {
     /**
      This enum is responsible for all the conversion methods needed by **VSTwitterTextCounter**
@@ -355,6 +355,28 @@ public class VSTwitterTextCounter: UIControl
         // Store the current cursor position as a range
         let preAttributedRange = textView.selectedRange
         
+        let textViewAttrbutes: [NSAttributedString.Key : Any]  = {
+            
+            var attr:[NSAttributedString.Key : Any] = [:]
+            
+            let paragraphStyle = NSMutableParagraphStyle()        
+            paragraphStyle.alignment = textView.textAlignment
+           
+            attr[.paragraphStyle] = paragraphStyle
+            
+            if let font = textView.font
+            {
+                attr[.font] = font
+            }
+            
+            if let textColor = textView.textColor
+            {
+                attr[.foregroundColor] = textColor
+            }
+            
+            return attr
+        }()
+        
         // Highlight any overflowing text
         if weightedLength > maxCount
         {
@@ -373,15 +395,22 @@ public class VSTwitterTextCounter: UIControl
             let okString = objcString.substring(to: lastAllowedCharacterIndex)
             let overflowingString = objcString.substring(from: lastAllowedCharacterIndex)
             
-            let attributedString = NSMutableAttributedString(string: okString, attributes: [.font: textView.font!])
-            
-            attributedString.append(NSAttributedString(string: overflowingString, attributes: [.backgroundColor: VSTwitterTextCounter.OVERFLOWING_TEXT_BACKGROUND, .font: textView.font!]))
+            var overFlowAttributes = textViewAttrbutes
+            overFlowAttributes[.backgroundColor] = VSTwitterTextCounter.OVERFLOWING_TEXT_BACKGROUND
+                        
+            let attributedString = NSMutableAttributedString(
+                string: okString, 
+                attributes: textViewAttrbutes)
+             
+            attributedString.append(NSAttributedString(
+                string: overflowingString,                                                    
+                attributes: overFlowAttributes))
             
             textView.attributedText = attributedString
         }
         else    // Reset any kind of formatting
         {
-            textView.attributedText = NSAttributedString(string: textView.text, attributes: [.font: textView.font!])   // Resets any kind of attributes
+            textView.attributedText = NSAttributedString(string: textView.text, attributes: textViewAttrbutes)   // Resets any kind of attributes
         }
         
         // Reapply the range
