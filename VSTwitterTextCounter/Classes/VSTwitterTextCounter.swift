@@ -329,7 +329,7 @@ public class VSTwitterTextCounter: UIControl
             case .Overflowing:
                 drawMyText(remaining, VSTwitterTextCounter.OVERFLOWING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
             default:
-                // Do nothing
+                drawMyText(remaining, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
                 break
             }
             
