@@ -317,19 +317,19 @@ open class VSTwitterTextCounter: UIControl
             
             ctx.restoreGState()
             
-            // Draw the remaining characters count if needed
+            // Draw the characters count if needed
             
             let textSize = CGSize(width: circle_center_point.x - VSTwitterTextCounter.CIRCLE_RADIUS - Conversion.max(VSTwitterTextCounter.INNER_STROKE_WIDTH, VSTwitterTextCounter.OUTTER_STROKE_WIDTH) - 8, height: 14)
-            let remaining = "\(maxCount - weightedLength)"
+            let counterText = "\(weightedLength)/\(maxCount)"
             
             switch counterState
             {
             case .Warning:
-                drawMyText(remaining, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
+                drawMyText(counterText, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
             case .Overflowing:
-                drawMyText(remaining, VSTwitterTextCounter.OVERFLOWING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
+                drawMyText(counterText, VSTwitterTextCounter.OVERFLOWING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
             default:
-                drawMyText(remaining, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
+                drawMyText(counterText, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
                 break
             }
             
