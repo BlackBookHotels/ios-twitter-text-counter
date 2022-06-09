@@ -67,7 +67,7 @@ open class VSTwitterTextCounter: UIControl
     /**
      Circle's radius
      */
-    private static let CIRCLE_RADIUS: CGFloat = 8
+    private static let CIRCLE_RADIUS: CGFloat = 6
     
     /**
      Inner circle's stroke width
@@ -95,7 +95,7 @@ open class VSTwitterTextCounter: UIControl
     /**
      Counter text's font
      */
-    private static let NUMBER_FONT = UIFont.systemFont(ofSize: 14)
+    private static let NUMBER_FONT = UIFont.systemFont(ofSize: 16)
     
     /**
      Main Circle color
@@ -319,17 +319,17 @@ open class VSTwitterTextCounter: UIControl
             
             // Draw the characters count if needed
             
-            let textSize = CGSize(width: circle_center_point.x - VSTwitterTextCounter.CIRCLE_RADIUS - Conversion.max(VSTwitterTextCounter.INNER_STROKE_WIDTH, VSTwitterTextCounter.OUTTER_STROKE_WIDTH) - 8, height: 14)
+            let textSize = CGSize(width: circle_center_point.x - VSTwitterTextCounter.CIRCLE_RADIUS - Conversion.max(VSTwitterTextCounter.INNER_STROKE_WIDTH, VSTwitterTextCounter.OUTTER_STROKE_WIDTH) - 8, height: 16)
             let counterText = "\(weightedLength)/\(maxCount)"
             
             switch counterState
             {
             case .Warning:
-                drawMyText(counterText, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
+                drawMyText(counterText, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2 - 1.5, width: textSize.width, height: textSize.height))
             case .Overflowing:
-                drawMyText(counterText, VSTwitterTextCounter.OVERFLOWING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
+                drawMyText(counterText, VSTwitterTextCounter.OVERFLOWING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2 - 1.5, width: textSize.width, height: textSize.height))
             default:
-                drawMyText(counterText, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2, width: textSize.width, height: textSize.height))
+                drawMyText(counterText, VSTwitterTextCounter.WARNING_NUMBER_COLOR, VSTwitterTextCounter.NUMBER_FONT, CGRect(x: 0, y: (height - textSize.height) / 2 - 1.5, width: textSize.width, height: textSize.height))
                 break
             }
             
