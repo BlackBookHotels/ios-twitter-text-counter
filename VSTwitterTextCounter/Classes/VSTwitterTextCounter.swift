@@ -95,7 +95,7 @@ open class VSTwitterTextCounter: UIControl
     /**
      Counter text's font
      */
-    private static let NUMBER_FONT = UIFont.systemFont(ofSize: 16)
+    private static let NUMBER_FONT = UIFont.systemFont(ofSize: 14)
     
     /**
      Main Circle color
@@ -291,35 +291,35 @@ open class VSTwitterTextCounter: UIControl
             
             // Draw the main background circle
             
-            let circle_center_point = CGPoint(x: width - VSTwitterTextCounter.CIRCLE_RADIUS - Conversion.max(VSTwitterTextCounter.INNER_STROKE_WIDTH, VSTwitterTextCounter.OUTTER_STROKE_WIDTH), y: height / 2.0)
-            
-            var path = UIBezierPath()
-            path = UIBezierPath(arcCenter: circle_center_point, radius: VSTwitterTextCounter.CIRCLE_RADIUS, startAngle: 0, endAngle: Conversion.degreesToRadians(value: 360), clockwise: true)
-            VSTwitterTextCounter.MAIN_CIRCLE_COLOR.setStroke()
-            VSTwitterTextCounter.DEFAULT_BACKGROUND_COLOR.setFill()
-            path.lineWidth = VSTwitterTextCounter.INNER_STROKE_WIDTH
-            path.stroke()
-            path.fill()
+//            let circle_center_point = CGPoint(x: width - VSTwitterTextCounter.CIRCLE_RADIUS - Conversion.max(VSTwitterTextCounter.INNER_STROKE_WIDTH, VSTwitterTextCounter.OUTTER_STROKE_WIDTH), y: height / 2.0)
+//            
+//            var path = UIBezierPath()
+//            path = UIBezierPath(arcCenter: circle_center_point, radius: VSTwitterTextCounter.CIRCLE_RADIUS, startAngle: 0, endAngle: Conversion.degreesToRadians(value: 360), clockwise: true)
+//            VSTwitterTextCounter.MAIN_CIRCLE_COLOR.setStroke()
+//            VSTwitterTextCounter.DEFAULT_BACKGROUND_COLOR.setFill()
+//            path.lineWidth = VSTwitterTextCounter.INNER_STROKE_WIDTH
+//            path.stroke()
+//            path.fill()
             
             ctx.saveGState()
             
             // Draw the progress circle
             
-            let percent = CGFloat(weightedLength) / CGFloat(maxCount)
-            let startAngle = CGFloat(-90)   // Start drawing from center top
-            let angle = 360 * percent + startAngle
-            path = UIBezierPath(arcCenter: circle_center_point, radius: VSTwitterTextCounter.CIRCLE_RADIUS, startAngle: Conversion.degreesToRadians(value: startAngle), endAngle: Conversion.degreesToRadians(value: angle), clockwise: true)
-            getCircleColor().setStroke()
-            VSTwitterTextCounter.DEFAULT_BACKGROUND_COLOR.setFill()
-            path.lineWidth = VSTwitterTextCounter.OUTTER_STROKE_WIDTH
-            path.stroke()
-            path.fill()
+//            let percent = CGFloat(weightedLength) / CGFloat(maxCount)
+//            let startAngle = CGFloat(-90)   // Start drawing from center top
+//            let angle = 360 * percent + startAngle
+//            path = UIBezierPath(arcCenter: circle_center_point, radius: VSTwitterTextCounter.CIRCLE_RADIUS, startAngle: Conversion.degreesToRadians(value: startAngle), endAngle: Conversion.degreesToRadians(value: angle), clockwise: true)
+//            getCircleColor().setStroke()
+//            VSTwitterTextCounter.DEFAULT_BACKGROUND_COLOR.setFill()
+//            path.lineWidth = VSTwitterTextCounter.OUTTER_STROKE_WIDTH
+//            path.stroke()
+//            path.fill()
             
             ctx.restoreGState()
             
             // Draw the characters count if needed
             
-            let textSize = CGSize(width: circle_center_point.x - VSTwitterTextCounter.CIRCLE_RADIUS - Conversion.max(VSTwitterTextCounter.INNER_STROKE_WIDTH, VSTwitterTextCounter.OUTTER_STROKE_WIDTH) - 8, height: 16)
+            let textSize = CGSize(width: self.bounds.size.width, height: 14)
             let counterText = "\(weightedLength)/\(maxCount)"
             
             switch counterState
