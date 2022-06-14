@@ -173,7 +173,7 @@ open class VSTwitterTextCounter: UIControl
      */
     open var counterState: VSTwitterTextCounterState
     {
-        if weightedLength >= maxCount
+        if weightedLength > maxCount
         {
             return .Overflowing
         }
