@@ -286,7 +286,7 @@ open class VSTwitterTextCounter: UIControl
             ctx.setAllowsAntialiasing(true)
             ctx.interpolationQuality = .high
             
-            let width = self.bounds.size.width
+            //let width = self.bounds.size.width
             let height = self.bounds.size.height
             
             // Draw the main background circle
