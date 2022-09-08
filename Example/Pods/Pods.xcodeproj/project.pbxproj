@@ -38,20 +38,20 @@
 
 /* Begin PBXFileReference section */
 		0B5ED6C30A14640C6618FA4B1F202DC2 /* Pods-VSTwitterTextCounter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VSTwitterTextCounter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0FB60148638ABE07A14DA4931DCB4397 /* VSTwitterTextCounter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VSTwitterTextCounter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0FB60148638ABE07A14DA4931DCB4397 /* VSTwitterTextCounter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = VSTwitterTextCounter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		242F34AD2A7B4FFF5E6D1D2575121B63 /* Pods-VSTwitterTextCounter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VSTwitterTextCounter_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3875C67298923DB2633101C53CBCB422 /* VSTwitterTextCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VSTwitterTextCounter.framework; path = VSTwitterTextCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3875C67298923DB2633101C53CBCB422 /* VSTwitterTextCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VSTwitterTextCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6A7A4C8DCC587DBCF857372A7BAF5D /* Pods-VSTwitterTextCounter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VSTwitterTextCounter_Example-dummy.m"; sourceTree = "<group>"; };
-		45F1DD06AE5B37673C525319191207C2 /* Pods_VSTwitterTextCounter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VSTwitterTextCounter_Example.framework; path = "Pods-VSTwitterTextCounter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F1DD06AE5B37673C525319191207C2 /* Pods_VSTwitterTextCounter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VSTwitterTextCounter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C949307BBEC982A30C7FE5F5DEFA0B /* Pods-VSTwitterTextCounter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VSTwitterTextCounter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5443BAF55E38FED0A88AF172FD7DB083 /* Pods-VSTwitterTextCounter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VSTwitterTextCounter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		62BB7F4512B0A7B8091D936167AE5EFA /* Pods-VSTwitterTextCounter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VSTwitterTextCounter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		68BCEAB9A302AB8C6BB06C414C72B2AB /* Pods-VSTwitterTextCounter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VSTwitterTextCounter_Tests-Info.plist"; sourceTree = "<group>"; };
-		6E940309996A51182FA9E59ECF075B18 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6E940309996A51182FA9E59ECF075B18 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7FB0BF16571D4AB013347BA73A8063D5 /* Pods-VSTwitterTextCounter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VSTwitterTextCounter_Tests.modulemap"; sourceTree = "<group>"; };
-		9073A4AF76C5A76DEE1C014926618869 /* Pods_VSTwitterTextCounter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VSTwitterTextCounter_Tests.framework; path = "Pods-VSTwitterTextCounter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9073A4AF76C5A76DEE1C014926618869 /* Pods_VSTwitterTextCounter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VSTwitterTextCounter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		915D789E1B26FEF848EDC37B152FE325 /* VSTwitterTextCounter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VSTwitterTextCounter.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4DFD3287AA264441617BC3528FD6640 /* Pods-VSTwitterTextCounter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VSTwitterTextCounter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6CBC9F40516DC290460B4BFFD3B1156 /* VSTwitterTextCounter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VSTwitterTextCounter-umbrella.h"; sourceTree = "<group>"; };
 		BABA2C05E30815241CEC4621FFE0E2A1 /* VSTwitterTextCounter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VSTwitterTextCounter-Info.plist"; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		CDA8CC87AE5C83838819792184046C24 /* Pods-VSTwitterTextCounter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VSTwitterTextCounter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CE420FA72EEA539CC84D38FD7E8462E2 /* Pods-VSTwitterTextCounter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VSTwitterTextCounter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CF53FD1B07B8754744352D98AAA30BE9 /* VSTwitterTextCounter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VSTwitterTextCounter-dummy.m"; sourceTree = "<group>"; };
-		D1213D9017E3A986C0D4B4BABA4850C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D1213D9017E3A986C0D4B4BABA4850C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E016C0DAD5F2F7E5B97794E783828DC4 /* VSTwitterTextCounter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VSTwitterTextCounter.xcconfig; sourceTree = "<group>"; };
 		E35C0E5495B4E28447148107E853B8EA /* Pods-VSTwitterTextCounter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VSTwitterTextCounter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EC5B1F2226B561C3F351AB242690F699 /* VSTwitterTextCounter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VSTwitterTextCounter.swift; path = VSTwitterTextCounter/Classes/VSTwitterTextCounter.swift; sourceTree = "<group>"; };
@@ -321,6 +321,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -456,8 +457,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -479,7 +479,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-VSTwitterTextCounter_Example/Pods-VSTwitterTextCounter_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-VSTwitterTextCounter_Example/Pods-VSTwitterTextCounter_Example.modulemap";
@@ -512,7 +512,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-VSTwitterTextCounter_Tests/Pods-VSTwitterTextCounter_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-VSTwitterTextCounter_Tests/Pods-VSTwitterTextCounter_Tests.modulemap";
@@ -610,7 +610,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-VSTwitterTextCounter_Tests/Pods-VSTwitterTextCounter_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-VSTwitterTextCounter_Tests/Pods-VSTwitterTextCounter_Tests.modulemap";
@@ -643,7 +643,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/VSTwitterTextCounter/VSTwitterTextCounter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/VSTwitterTextCounter/VSTwitterTextCounter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/VSTwitterTextCounter/VSTwitterTextCounter.modulemap";
 				PRODUCT_MODULE_NAME = VSTwitterTextCounter;
@@ -674,7 +674,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/VSTwitterTextCounter/VSTwitterTextCounter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/VSTwitterTextCounter/VSTwitterTextCounter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/VSTwitterTextCounter/VSTwitterTextCounter.modulemap";
 				PRODUCT_MODULE_NAME = VSTwitterTextCounter;
@@ -706,7 +706,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-VSTwitterTextCounter_Example/Pods-VSTwitterTextCounter_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-VSTwitterTextCounter_Example/Pods-VSTwitterTextCounter_Example.modulemap";
