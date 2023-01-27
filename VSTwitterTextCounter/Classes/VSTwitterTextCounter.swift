@@ -120,7 +120,7 @@ open class VSTwitterTextCounter: UIControl
     /**
      Warning counter's text color
      */
-    private static let WARNING_NUMBER_COLOR = #colorLiteral(red: 0.3960784314, green: 0.4666666667, blue: 0.5254901961, alpha: 1)
+    private static let WARNING_NUMBER_COLOR = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     
     /**
      Overflowing counter's text color
